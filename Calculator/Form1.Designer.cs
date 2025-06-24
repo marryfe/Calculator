@@ -47,15 +47,15 @@
             BtnAdd = new Button();
             BtnSubtract = new Button();
             BtnMultiply = new Button();
-            BtnDivide = new Button();
-            TxtNum = new TextBox();
-            textBox2 = new TextBox();
+            TxtBox1 = new TextBox();
+            TxtBox2 = new TextBox();
             BtnPercent = new Button();
+            BtnDivide = new Button();
             SuspendLayout();
             // 
             // BtnINClear
             // 
-            BtnINClear.BackColor = Color.WhiteSmoke;
+            BtnINClear.BackColor = Color.White;
             BtnINClear.FlatAppearance.BorderColor = Color.Gainsboro;
             BtnINClear.FlatStyle = FlatStyle.Flat;
             BtnINClear.Font = new Font("Segoe UI", 11.25F);
@@ -65,10 +65,11 @@
             BtnINClear.TabIndex = 2;
             BtnINClear.Text = "CE";
             BtnINClear.UseVisualStyleBackColor = false;
+            BtnINClear.Click += BtnINClear_Click;
             // 
             // BtnClear
             // 
-            BtnClear.BackColor = Color.WhiteSmoke;
+            BtnClear.BackColor = Color.White;
             BtnClear.FlatAppearance.BorderColor = Color.Gainsboro;
             BtnClear.FlatStyle = FlatStyle.Flat;
             BtnClear.Font = new Font("Segoe UI", 11.25F);
@@ -78,19 +79,21 @@
             BtnClear.TabIndex = 3;
             BtnClear.Text = "C";
             BtnClear.UseVisualStyleBackColor = false;
+            BtnClear.Click += BtnClear_Click;
             // 
             // BtnErase
             // 
-            BtnErase.BackColor = Color.WhiteSmoke;
+            BtnErase.BackColor = Color.White;
             BtnErase.FlatAppearance.BorderColor = Color.Gainsboro;
             BtnErase.FlatStyle = FlatStyle.Flat;
             BtnErase.Font = new Font("Segoe UI", 11.25F);
-            BtnErase.Location = new Point(249, 146);
+            BtnErase.Location = new Point(12, 362);
             BtnErase.Name = "BtnErase";
             BtnErase.Size = new Size(73, 48);
             BtnErase.TabIndex = 4;
             BtnErase.Text = "⌫";
             BtnErase.UseVisualStyleBackColor = false;
+            BtnErase.Click += BtnErase_Click;
             // 
             // BtnSeven
             // 
@@ -104,6 +107,7 @@
             BtnSeven.TabIndex = 6;
             BtnSeven.Text = "7";
             BtnSeven.UseVisualStyleBackColor = false;
+            BtnSeven.Click += BtnSeven_Click;
             // 
             // BtnFour
             // 
@@ -117,6 +121,7 @@
             BtnFour.TabIndex = 7;
             BtnFour.Text = "4";
             BtnFour.UseVisualStyleBackColor = false;
+            BtnFour.Click += BtnFour_Click;
             // 
             // BtnOne
             // 
@@ -130,6 +135,7 @@
             BtnOne.TabIndex = 8;
             BtnOne.Text = "1";
             BtnOne.UseVisualStyleBackColor = false;
+            BtnOne.Click += BtnOne_Click;
             // 
             // BtnEight
             // 
@@ -143,6 +149,7 @@
             BtnEight.TabIndex = 10;
             BtnEight.Text = "8";
             BtnEight.UseVisualStyleBackColor = false;
+            BtnEight.Click += BtnEight_Click;
             // 
             // BtnFive
             // 
@@ -156,6 +163,7 @@
             BtnFive.TabIndex = 11;
             BtnFive.Text = "5";
             BtnFive.UseVisualStyleBackColor = false;
+            BtnFive.Click += BtnFive_Click;
             // 
             // BtnTwo
             // 
@@ -169,6 +177,7 @@
             BtnTwo.TabIndex = 12;
             BtnTwo.Text = "2";
             BtnTwo.UseVisualStyleBackColor = false;
+            BtnTwo.Click += BtnTwo_Click;
             // 
             // BtnZero
             // 
@@ -182,6 +191,7 @@
             BtnZero.TabIndex = 13;
             BtnZero.Text = "0";
             BtnZero.UseVisualStyleBackColor = false;
+            BtnZero.Click += BtnZero_Click;
             // 
             // BtnDecimal
             // 
@@ -195,6 +205,7 @@
             BtnDecimal.TabIndex = 17;
             BtnDecimal.Text = ".";
             BtnDecimal.UseVisualStyleBackColor = false;
+            BtnDecimal.Click += BtnDecimal_Click;
             // 
             // BtnThree
             // 
@@ -208,6 +219,7 @@
             BtnThree.TabIndex = 16;
             BtnThree.Text = "3";
             BtnThree.UseVisualStyleBackColor = false;
+            BtnThree.Click += BtnThree_Click;
             // 
             // BtnSix
             // 
@@ -221,6 +233,7 @@
             BtnSix.TabIndex = 15;
             BtnSix.Text = "6";
             BtnSix.UseVisualStyleBackColor = false;
+            BtnSix.Click += BtnSix_Click;
             // 
             // BtnNine
             // 
@@ -234,100 +247,95 @@
             BtnNine.TabIndex = 14;
             BtnNine.Text = "9";
             BtnNine.UseVisualStyleBackColor = false;
+            BtnNine.Click += BtnNine_Click;
             // 
             // BtnEqual
             // 
-            BtnEqual.BackColor = Color.DimGray;
+            BtnEqual.BackColor = Color.FromArgb(116, 86, 174);
             BtnEqual.FlatStyle = FlatStyle.Flat;
             BtnEqual.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnEqual.ForeColor = SystemColors.Control;
-            BtnEqual.Location = new Point(12, 362);
+            BtnEqual.Location = new Point(251, 362);
             BtnEqual.Name = "BtnEqual";
             BtnEqual.Size = new Size(73, 48);
             BtnEqual.TabIndex = 22;
             BtnEqual.Text = "=";
             BtnEqual.UseVisualStyleBackColor = false;
+            BtnEqual.Click += BtnEqual_Click;
             // 
             // BtnAdd
             // 
-            BtnAdd.BackColor = Color.WhiteSmoke;
+            BtnAdd.BackColor = Color.FromArgb(116, 86, 174);
             BtnAdd.FlatAppearance.BorderColor = Color.Gainsboro;
             BtnAdd.FlatStyle = FlatStyle.Flat;
             BtnAdd.Font = new Font("Segoe UI", 18F);
-            BtnAdd.Location = new Point(249, 362);
+            BtnAdd.ForeColor = SystemColors.Control;
+            BtnAdd.Location = new Point(251, 252);
             BtnAdd.Name = "BtnAdd";
             BtnAdd.Size = new Size(73, 48);
             BtnAdd.TabIndex = 21;
             BtnAdd.Text = "+";
             BtnAdd.UseVisualStyleBackColor = false;
+            BtnAdd.Click += BtnAdd_Click;
             // 
             // BtnSubtract
             // 
-            BtnSubtract.BackColor = Color.WhiteSmoke;
+            BtnSubtract.BackColor = Color.FromArgb(116, 86, 174);
             BtnSubtract.FlatAppearance.BorderColor = Color.Gainsboro;
             BtnSubtract.FlatStyle = FlatStyle.Flat;
             BtnSubtract.Font = new Font("Segoe UI", 18F);
-            BtnSubtract.Location = new Point(249, 308);
+            BtnSubtract.ForeColor = SystemColors.Control;
+            BtnSubtract.Location = new Point(251, 308);
             BtnSubtract.Name = "BtnSubtract";
             BtnSubtract.Size = new Size(73, 48);
             BtnSubtract.TabIndex = 20;
             BtnSubtract.Text = "-";
             BtnSubtract.UseVisualStyleBackColor = false;
+            BtnSubtract.Click += BtnSubtract_Click;
             // 
             // BtnMultiply
             // 
-            BtnMultiply.BackColor = Color.WhiteSmoke;
+            BtnMultiply.BackColor = Color.FromArgb(116, 86, 174);
             BtnMultiply.FlatAppearance.BorderColor = Color.Gainsboro;
             BtnMultiply.FlatStyle = FlatStyle.Flat;
             BtnMultiply.Font = new Font("Segoe UI", 18F);
-            BtnMultiply.Location = new Point(249, 254);
+            BtnMultiply.ForeColor = SystemColors.Control;
+            BtnMultiply.Location = new Point(251, 200);
             BtnMultiply.Name = "BtnMultiply";
             BtnMultiply.Size = new Size(73, 48);
             BtnMultiply.TabIndex = 19;
             BtnMultiply.Text = "×";
             BtnMultiply.UseVisualStyleBackColor = false;
+            BtnMultiply.Click += BtnMultiply_Click;
             // 
-            // BtnDivide
+            // TxtBox1
             // 
-            BtnDivide.BackColor = Color.WhiteSmoke;
-            BtnDivide.FlatAppearance.BorderColor = Color.Gainsboro;
-            BtnDivide.FlatStyle = FlatStyle.Flat;
-            BtnDivide.Font = new Font("Segoe UI", 18F);
-            BtnDivide.Location = new Point(249, 200);
-            BtnDivide.Name = "BtnDivide";
-            BtnDivide.Size = new Size(73, 48);
-            BtnDivide.TabIndex = 18;
-            BtnDivide.Text = "÷";
-            BtnDivide.UseVisualStyleBackColor = false;
+            TxtBox1.BackColor = Color.WhiteSmoke;
+            TxtBox1.BorderStyle = BorderStyle.None;
+            TxtBox1.Font = new Font("Segoe UI Semibold", 33.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            TxtBox1.Location = new Point(12, 71);
+            TxtBox1.Name = "TxtBox1";
+            TxtBox1.Size = new Size(312, 60);
+            TxtBox1.TabIndex = 23;
+            TxtBox1.Text = "0";
+            TxtBox1.TextAlign = HorizontalAlignment.Right;
             // 
-            // TxtNum
+            // TxtBox2
             // 
-            TxtNum.BackColor = Color.WhiteSmoke;
-            TxtNum.BorderStyle = BorderStyle.None;
-            TxtNum.Font = new Font("Segoe UI Semibold", 33.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            TxtNum.Location = new Point(10, 67);
-            TxtNum.Name = "TxtNum";
-            TxtNum.Size = new Size(312, 60);
-            TxtNum.TabIndex = 23;
-            TxtNum.Text = "0";
-            TxtNum.TextAlign = HorizontalAlignment.Right;
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = Color.WhiteSmoke;
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Segoe UI Semibold", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.ForeColor = Color.Gray;
-            textBox2.Location = new Point(11, 36);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(309, 39);
-            textBox2.TabIndex = 28;
-            textBox2.Text = "0";
-            textBox2.TextAlign = HorizontalAlignment.Right;
+            TxtBox2.BackColor = Color.WhiteSmoke;
+            TxtBox2.BorderStyle = BorderStyle.None;
+            TxtBox2.Font = new Font("Segoe UI Semibold", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            TxtBox2.ForeColor = SystemColors.ControlDark;
+            TxtBox2.Location = new Point(11, 36);
+            TxtBox2.Name = "TxtBox2";
+            TxtBox2.Size = new Size(309, 39);
+            TxtBox2.TabIndex = 28;
+            TxtBox2.Text = "0";
+            TxtBox2.TextAlign = HorizontalAlignment.Right;
             // 
             // BtnPercent
             // 
-            BtnPercent.BackColor = Color.WhiteSmoke;
+            BtnPercent.BackColor = Color.White;
             BtnPercent.FlatAppearance.BorderColor = Color.Gainsboro;
             BtnPercent.FlatStyle = FlatStyle.Flat;
             BtnPercent.Font = new Font("Segoe UI", 11.25F);
@@ -338,6 +346,22 @@
             BtnPercent.TabIndex = 1;
             BtnPercent.Text = "%";
             BtnPercent.UseVisualStyleBackColor = false;
+            BtnPercent.Click += BtnPercent_Click;
+            // 
+            // BtnDivide
+            // 
+            BtnDivide.BackColor = Color.FromArgb(116, 86, 174);
+            BtnDivide.FlatAppearance.BorderColor = Color.Gainsboro;
+            BtnDivide.FlatStyle = FlatStyle.Flat;
+            BtnDivide.Font = new Font("Segoe UI", 18F);
+            BtnDivide.ForeColor = SystemColors.Control;
+            BtnDivide.Location = new Point(251, 146);
+            BtnDivide.Name = "BtnDivide";
+            BtnDivide.Size = new Size(73, 48);
+            BtnDivide.TabIndex = 18;
+            BtnDivide.Text = "÷";
+            BtnDivide.UseVisualStyleBackColor = false;
+            BtnDivide.Click += BtnDivide_Click;
             // 
             // Form1
             // 
@@ -345,8 +369,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(334, 421);
-            Controls.Add(textBox2);
-            Controls.Add(TxtNum);
+            Controls.Add(TxtBox2);
+            Controls.Add(TxtBox1);
             Controls.Add(BtnEqual);
             Controls.Add(BtnAdd);
             Controls.Add(BtnSubtract);
@@ -393,9 +417,9 @@
         private Button BtnAdd;
         private Button BtnSubtract;
         private Button BtnMultiply;
-        private Button BtnDivide;
-        private TextBox TxtNum;
-        private TextBox textBox2;
+        private TextBox TxtBox1;
+        private TextBox TxtBox2;
         private Button BtnPercent;
+        private Button BtnDivide;
     }
 }
