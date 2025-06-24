@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             BtnINClear = new Button();
             BtnClear = new Button();
             BtnErase = new Button();
@@ -303,10 +304,10 @@
             // 
             TxtNum.BackColor = Color.WhiteSmoke;
             TxtNum.BorderStyle = BorderStyle.None;
-            TxtNum.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            TxtNum.Font = new Font("Segoe UI Semibold", 33.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             TxtNum.Location = new Point(10, 67);
             TxtNum.Name = "TxtNum";
-            TxtNum.Size = new Size(312, 50);
+            TxtNum.Size = new Size(312, 60);
             TxtNum.TabIndex = 23;
             TxtNum.Text = "0";
             TxtNum.TextAlign = HorizontalAlignment.Right;
@@ -315,11 +316,11 @@
             // 
             textBox2.BackColor = Color.WhiteSmoke;
             textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox2.Font = new Font("Segoe UI Semibold", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox2.ForeColor = Color.Gray;
             textBox2.Location = new Point(11, 36);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(309, 28);
+            textBox2.Size = new Size(309, 39);
             textBox2.TabIndex = 28;
             textBox2.Text = "0";
             textBox2.TextAlign = HorizontalAlignment.Right;
@@ -366,8 +367,9 @@
             Controls.Add(BtnClear);
             Controls.Add(BtnINClear);
             Controls.Add(BtnPercent);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            Text = "Form1";
+            Text = "Calculator";
             ResumeLayout(false);
             PerformLayout();
         }
