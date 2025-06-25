@@ -232,7 +232,6 @@ namespace Calculator
         private void BtnClear_Click(object sender, EventArgs e)
         {
             TxtBox1.Text = "0";
-            TxtBox2.Text = " ";
             result = 0;
             ope = "";
 
